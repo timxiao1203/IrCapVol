@@ -1,10 +1,12 @@
 # Ir Cap Implied Volatility Surface
 
 Overview
+
 	An implied volatility is the volatility implied by the market price of an option based on the Black-Scholes option pricing model. In cap market, a cap/floor is quoted by implied volatilities but not prices. An interest rate cap volatility surface is a three-dimensional plot of the implied volatility of a cap as a function of strike and maturity. 
 	The term structures of implied volatilities which provide indications of the market’s near- and long-term uncertainty about future short- and long-term forward interest rates. A crucial property of the implied volatility surface is the absence of arbitrage.
 
 Summary
+
 	Cap Volatility Surface Introduction
 	The Summary of Volatility Surface Construction Approaches
 	Arbitrage Free Conditions
@@ -12,6 +14,7 @@ Summary
 	Cap Volatility Surface Construction via The SABR Model
 
 Cap Volatility Surface Introduction
+
 	An implied volatility is the volatility implied by the market price of an option based on the Black-Scholes option pricing model. 
 	In market, a cap/floor is quoted by implied volatilities rather than prices.
 	An interest rate cap volatility surface is a three-dimensional plot of the implied volatility of a cap as a function of strike and maturity. 
@@ -19,8 +22,8 @@ Cap Volatility Surface Introduction
 	Vol skew or smile pattern is directly related to the conditional non-normality of the underlying returns. In particular, a smile reflects fat tails in the return distribution whereas a skew indicates asymmetry.
 	A crucial property of the implied volatility surface is the absence of arbitrage.
 
-The Summary of Volatility Surface 
-Construction Approaches
+The Summary of Volatility Surface Construction Approaches
+
 	To construct a reliable volatility surface, it is necessarily to apply robust interpolation methods to a set of discrete volatility data. Arbitrage free conditions may be implicitly or explicitly embedded in the procedure. Typical approaches are
 	Local Volatility Model: a generalisation of the Blaack-Scholes model.
 	Stochastic Volatility Models: such as SABR, Heston, Levy
@@ -29,6 +32,7 @@ Construction Approaches
 	Interpolation/Extrapolation Model: interpolating or extrapolating volatility data using specific function forms
 
 Arbitrage Free Conditions
+
 	Any volatility models must meet arbitrage free conditions.
 	Typical arbitrage free conditions
 	Static arbitrage free condition: Static arbitrage free condition makes it impossible to invest nothing today and receive positive return tomorrow. 
@@ -40,6 +44,7 @@ Arbitrage Free Conditions
 	At FinPricing, we use the SABR model to construct cap volatility surfaces following the best market practice.
 
 The SABR Model
+
 	SABR stands for “stochastic alpha, beta, rho” referring to the parameters of the model.
 	The SABR model is a stochastic volatility model for the evolution of the forward price of an asset, which attempts to capture the volatility smile/skew in derivative markets.
 	There is a closed-form approximation of the implied volatility of the SABR model.
@@ -60,8 +65,8 @@ W_1,W_2	the standard Brownian motions
 	𝜌 	the correlation that describes the “skew” or average slope of the volatility curve across strike.
 	𝑣 	the volatility of volatility that describes the “smile” or curvature/convexity of the volatility curve across the strike for a given term and tenor.
 
-Constructing Cap Volatility Surface 
-via The SABR Model
+Constructing Cap Volatility Surface  via The SABR Model
+
 	For each maturity of a cap/floor, conduct the following calibration procedure.
 	The 𝛽 parameter is estimated first and typically chosen a priri according to how the market prices are to be observed.
 	Alternatively 𝛽  can be estimated by a linear regression on a time series of ATM volatilities and of forward rates.
