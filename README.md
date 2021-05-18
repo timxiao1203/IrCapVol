@@ -82,6 +82,9 @@ The Levenberg-Marquardt least-squares optimization routine is used for optimizat
 	After 𝛼,𝛽,𝜌,𝑣 calibrated, one can generate SABR volatility (cap volatility) for any moneyness.
 	Repeat the above process for each term and tenor.
 
+References:
 
-You can find more details at
 https://finpricing.com/lib/FxVolIntroduction.html
+
+https://bitbucket.org/timxiao1203/ircapvol/downloads/IrCapVol-7.pdf
+
