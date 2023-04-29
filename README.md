@@ -85,6 +85,3 @@ The Levenberg-Marquardt least-squares optimization routine is used for optimizat
 References:
 
 https://finpricing.com/lib/FxVolIntroduction.html
-
-https://bitbucket.org/timxiao1203/ircapvol/downloads/IrCapVol-7.pdf
-
